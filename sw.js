@@ -14,7 +14,7 @@ NECESARIOS PARA LA VISUALIZACION Y FUNCIONAMIENTO DESDE LA CACHE */
 
 const APP_SHELL = [
 
-    '/',
+    /* '/', */
     'index.html',
     'css/style.css',
     'img/favicon.ico',

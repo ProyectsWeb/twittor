@@ -1,8 +1,18 @@
+
+let url = window.location.href;
+let swLocation = '/twittor/sw.js';
+
+
 /* 1- REGISTRAR EL SERVICE WORKER -ws */
 
 if( navigator.serviceWorker){
 
-    navigator.serviceWorker.register('/sw.js');
+    if(url.includes('localhost')){
+
+        swLocation = '/sw.js';
+    }
+
+    navigator.serviceWorker.register( swLocation );
 }
 
 
